@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Parks</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>National Parks</h1>
+        <form>
+            <h2>Find National Parks in any state</h2>
+            <div>
+                <label for="state">Choose 1 or more states: </label>
+                <table>
+                    <tr>
+                        <td><input type="checkbox" name="state" value="AL" class="js-state">Alabama</td>
+                        <td><input type="checkbox" name="state" value="HI" class="js-state">Hawaii</td>
+                        <td><input type="checkbox" name="state" value="MA" class="js-state">Massachusetts</td>
+                        <td><input type="checkbox" name="state" value="NM" class="js-state">New Mexico</td>
+                        <td><input type="checkbox" name="state" value="SD" class="js-state">South Dakota</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="state" value="AK" class="js-state">Alaska</td>
+                        <td><input type="checkbox" name="state" value="ID" class="js-state">Idaho</td>
+                        <td><input type="checkbox" name="state" value="MI" class="js-state">Michigan</td>
+                        <td><input type="checkbox" name="state" value="NY" class="js-state">New York</td>
+                        <td><input type="checkbox" name="state" value="TN" class="js-state">Tennessee</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="state" value="AZ" class="js-state">Arizona</td>
+                        <td><input type="checkbox" name="state" value="IL" class="js-state">Illinois</td>
+                        <td><input type="checkbox" name="state" value="MN" class="js-state">Minnesota</td>
+                        <td><input type="checkbox" name="state" value="NC" class="js-state">North Carolina</td>
+                        <td><input type="checkbox" name="state" value="TX" class="js-state">Texas</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="state" value="AR" class="js-state">Arkansas</td>
+                        <td><input type="checkbox" name="state" value="IN" class="js-state">Indiana</td>
+                        <td><input type="checkbox" name="state" value="MS" class="js-state">Mississippi</td>
+                        <td><input type="checkbox" name="state" value="ND" class="js-state">North Dakota</td>
+                        <td><input type="checkbox" name="state" value="UT" class="js-state">Utah</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="state" value="CA" class="js-state">California</td>
+                        <td><input type="checkbox" name="state" value="IA" class="js-state">Iowa</td>
+                        <td><input type="checkbox" name="state" value="MO" class="js-state">Missouri</td>
+                        <td><input type="checkbox" name="state" value="OH" class="js-state">Ohio</td>
+                        <td><input type="checkbox" name="state" value="VT" class="js-state">Vermont</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="state" value="CO" class="js-state">Colorado</td>
+                        <td><input type="checkbox" name="state" value="KS" class="js-state">Kansas</td>
+                        <td><input type="checkbox" name="state" value="MT" class="js-state">Montana</td>
+                        <td><input type="checkbox" name="state" value="OK" class="js-state">Oklahoma</td>
+                        <td><input type="checkbox" name="state" value="VA" class="js-state">Virginia</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="state" value="CT" class="js-state">Connecticut</td>
+                        <td><input type="checkbox" name="state" value="KY" class="js-state">Kentucky</td>
+                        <td><input type="checkbox" name="state" value="NE" class="js-state">Nebraska</td>
+                        <td><input type="checkbox" name="state" value="OR" class="js-state">Oregon</td>
+                        <td><input type="checkbox" name="state" value="WA" class="js-state">Washington</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="state" value="DE" class="js-state">Delaware</td>
+                        <td><input type="checkbox" name="state" value="LA" class="js-state">Louisiana</td>
+                        <td><input type="checkbox" name="state" value="NV" class="js-state">Nevada</td>
+                        <td><input type="checkbox" name="state" value="PA" class="js-state">Pennsylvania</td>
+                        <td><input type="checkbox" name="state" value="WV" class="js-state">West Virginia</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="state" value="FL" class="js-state">Florida</td>
+                        <td><input type="checkbox" name="state" value="ME" class="js-state">Maine</td>
+                        <td><input type="checkbox" name="state" value="NH" class="js-state">New Hampshire</td>
+                        <td><input type="checkbox" name="state" value="RI" class="js-state">Rhode Island</td>
+                        <td><input type="checkbox" name="state" value="WI" class="js-state">Wisconsin</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="state" value="GA" class="js-state">Georgia</td>
+                        <td><input type="checkbox" name="state" value="MD" class="js-state">Maryland</td>
+                        <td><input type="checkbox" name="state" value="NJ" class="js-state">New Jersey</td>
+                        <td><input type="checkbox" name="state" value="SC" class="js-state">South Carolina</td>
+                        <td><input type="checkbox" name="state" value="WY" class="js-state">Wyoming</td>
+                    </tr>
+                </table>
+                    
+                </select>
+            </div>
+            <div>
+                <label for="maxResults">Max Number of Results: </label>
+                <input type="text" name="maxResults" id="maxResults" placeholder="default is 10">
+            </div>
+            <input type="submit" value="Submit" class="submitBtn">
+        </form>
+        <hr>
+        <p class="js-errorMsg"></p>
+        <section class="resultsBox hidden">
+            <h2>Search Results: </h2>
+            <ul class="resultsList"></ul>
+        </section>
+    </div> <!--end of container-->
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+/* NATIONAL PARKS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Handlee', cursive, sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+h1,
+form {
+    margin: 10px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #006400;
+}
+
+form h2,
+form div {
+    margin-bottom: 7px;
+}
+
+form div,
+form input,
+form table,
+.submitBtn {
+    font-size: 18px;
+}
+
+form table {
+    margin: 5px auto;
+    text-align: left;
+}
+
+form table tr {
+    margin-bottom: 2px;
+}
+
+form table input {
+    margin-right: 3px;
+}
+
+form table td {
+    padding-right: 12px;
+}
+
+.submitBtn {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #9797ff;
+}
+
+.submitBtn:hover {
+    background-color: #0000ff;
+    color: #ffffff;
+    /* add box shadow to button on hover */
+}
+
+ion-icon {
+    display: inline-block;
+    color: #006400;
+    font-size: 150%;
+    margin-right: 7px;
+}
+
+h3 {
+    display: inline-block;
+}
+
+.parkLi {
+    margin: 10px;
+}
+
+.resultsBox {
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.resultsBox ul {
+    list-style: none;
+}
+
+.resultsBox li {
+    text-decoration: none;
+}
