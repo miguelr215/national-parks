@@ -1,4 +1,5 @@
 // NATIONAL PARKS
+'use strict';
 
 const apiKey = 'WTSk82lF3JbXaHeGjqpeG2ENm2MIT2RbSpaq1nWx';
 
@@ -36,8 +37,8 @@ function getParks(userStates, userMax){
         //     }
         //     throw new Error(response.statusText)
         // })
-        .then(responseJson => displayResults(responseJson, userMax));
-        // .catch(error => $('.js-errorMsg').text(`Houston we have a problem: ${error.message}`));
+        .then(responseJson => displayResults(responseJson, userMax))
+        .catch(error => $('.js-errorMsg').text(`Houston we have a problem: ${error.message}`));
 
 };
 
